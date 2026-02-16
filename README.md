@@ -225,18 +225,3 @@ train_file, test_file = preprocessor.preprocess_and_save(
     train_split=0.8               # 0.0-1.0
 )
 ```
-
-## Future Enhancements
-- Feature importance analysis
-- Model hyperparameter tuning
-- Cross-validation for robust evaluation
-- Additional classification algorithms (XGBoost, Neural Networks)
-- Hierarchical clustering for segment analysis
-- Real-time prediction API
-- Interactive dashboard for business users
-
-## Contact & Support
-For questions or issues, please refer to the log files for detailed execution information.
-
-## License
-This project is developed for educational and business analysis purposes.
