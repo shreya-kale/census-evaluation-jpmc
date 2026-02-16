@@ -1,0 +1,195 @@
+2026-02-15 18:16:23,003 - __main__ - INFO - Loaded 42 columns from data/census-bureau.columns
+2026-02-15 18:16:23,003 - __main__ - INFO - Initialized: Loaded columns ['age', 'class of worker', 'detailed industry recode', 'detailed occupation recode', 'education', 'wage per hour', 'enroll in edu inst last wk', 'marital stat', 'major industry code', 'major occupation code', 'race', 'hispanic origin', 'sex', 'member of a labor union', 'reason for unemployment', 'full or part time employment stat', 'capital gains', 'capital losses', 'dividends from stocks', 'tax filer stat', 'region of previous residence', 'state of previous residence', 'detailed household and family stat', 'detailed household summary in household', 'weight', 'migration code-change in msa', 'migration code-change in reg', 'migration code-move within reg', 'live in this house 1 year ago', 'migration prev res in sunbelt', 'num persons worked for employer', 'family members under 18', 'country of birth father', 'country of birth mother', 'country of birth self', 'citizenship', 'own business or self employed', "fill inc questionnaire for veteran's admin", 'veterans benefits', 'weeks worked in year', 'year', 'label'], batch_size=128
+2026-02-15 18:16:23,003 - __main__ - INFO - Data explorer started
+2026-02-15 18:16:23,003 - __main__ - INFO - Collecting 20 batches for sampling
+2026-02-15 18:16:23,027 - __main__ - INFO - Sample of 2560 size created
+2026-02-15 18:16:23,027 - __main__ - INFO - Sample obtained
+2026-02-15 18:16:23,027 - __main__ - INFO - Dataset Overview
+2026-02-15 18:16:23,027 - __main__ - INFO - 	Rows: 2560
+2026-02-15 18:16:23,027 - __main__ - INFO - 	Columns: 42
+2026-02-15 18:16:23,033 - __main__ - INFO - 	Memory: 4.74 MB
+
+2026-02-15 18:16:23,033 - __main__ - INFO - Data Types
+2026-02-15 18:16:23,034 - __main__ - INFO - Numeric columns: 13
+2026-02-15 18:16:23,034 - __main__ - INFO - Categorical columns: 29
+
+2026-02-15 18:16:23,034 - __main__ - INFO - Missing Values
+2026-02-15 18:16:23,035 - __main__ - INFO - Missing values:
+age                                           0
+class of worker                               0
+detailed industry recode                      0
+detailed occupation recode                    0
+education                                     0
+wage per hour                                 0
+enroll in edu inst last wk                    0
+marital stat                                  0
+major industry code                           0
+major occupation code                         0
+race                                          0
+hispanic origin                               6
+sex                                           0
+member of a labor union                       0
+reason for unemployment                       0
+full or part time employment stat             0
+capital gains                                 0
+capital losses                                0
+dividends from stocks                         0
+tax filer stat                                0
+region of previous residence                  0
+state of previous residence                   0
+detailed household and family stat            0
+detailed household summary in household       0
+weight                                        0
+migration code-change in msa                  0
+migration code-change in reg                  0
+migration code-move within reg                0
+live in this house 1 year ago                 0
+migration prev res in sunbelt                 0
+num persons worked for employer               0
+family members under 18                       0
+country of birth father                       0
+country of birth mother                       0
+country of birth self                         0
+citizenship                                   0
+own business or self employed                 0
+fill inc questionnaire for veteran's admin    0
+veterans benefits                             0
+weeks worked in year                          0
+year                                          0
+label                                         0
+dtype: int64
+2026-02-15 18:16:23,036 - __main__ - INFO - Missing Column Values: 1
+2026-02-15 18:16:23,036 - __main__ - INFO - 	hispanic origin: 6 (0.2%)
+
+2026-02-15 18:16:23,036 - __main__ - INFO - Target Variable Analysis
+2026-02-15 18:16:23,036 - __main__ - INFO - Column name: label
+2026-02-15 18:16:23,036 - __main__ - INFO - Unique values: 2
+2026-02-15 18:16:23,036 - __main__ - INFO - Distribution:
+label
+- 50000.    2426
+50000+.      134
+Name: count, dtype: int64
+
+2026-02-15 18:16:23,036 - __main__ - INFO - Data Statistics
+2026-02-15 18:16:23,036 - __main__ - INFO - Numeric Columns Description
+2026-02-15 18:16:23,041 - __main__ - INFO -                age  detailed industry recode  ...  weeks worked in year         year
+count  2560.000000               2560.000000  ...           2560.000000  2560.000000
+mean     34.660938                 15.826562  ...             24.367969    94.494531
+std      21.539477                 17.973875  ...             24.462214     0.500068
+min       0.000000                  0.000000  ...              0.000000    94.000000
+25%      16.000000                  0.000000  ...              0.000000    94.000000
+50%      34.000000                  4.000000  ...             16.000000    94.000000
+75%      49.000000                 33.000000  ...             52.000000    95.000000
+max      90.000000                 50.000000  ...             52.000000    95.000000
+
+[8 rows x 13 columns]
+2026-02-15 18:16:23,048 - __main__ - INFO - Categorical Columns Description
+2026-02-15 18:16:23,059 - __main__ - INFO -         class of worker  ...     label
+count              2560  ...      2560
+unique                9  ...         2
+top     Not in universe  ...  - 50000.
+freq               1231  ...      2426
+
+[4 rows x 29 columns]
+2026-02-15 18:16:23,071 - __main__ - INFO - Description Ready
+
+2026-02-15 18:16:23,071 - __main__ - INFO - Exploration insights ready. Function returns Dict[str, Any]
+2026-02-16 01:28:15,677 - __main__ - INFO - Loaded 42 columns from data/census-bureau.columns
+2026-02-16 01:28:15,677 - __main__ - INFO - Initialized: Loaded columns ['age', 'class of worker', 'detailed industry recode', 'detailed occupation recode', 'education', 'wage per hour', 'enroll in edu inst last wk', 'marital stat', 'major industry code', 'major occupation code', 'race', 'hispanic origin', 'sex', 'member of a labor union', 'reason for unemployment', 'full or part time employment stat', 'capital gains', 'capital losses', 'dividends from stocks', 'tax filer stat', 'region of previous residence', 'state of previous residence', 'detailed household and family stat', 'detailed household summary in household', 'weight', 'migration code-change in msa', 'migration code-change in reg', 'migration code-move within reg', 'live in this house 1 year ago', 'migration prev res in sunbelt', 'num persons worked for employer', 'family members under 18', 'country of birth father', 'country of birth mother', 'country of birth self', 'citizenship', 'own business or self employed', "fill inc questionnaire for veteran's admin", 'veterans benefits', 'weeks worked in year', 'year', 'label'], batch_size=128
+2026-02-16 01:28:15,677 - __main__ - INFO - Data explorer started
+2026-02-16 01:28:15,677 - __main__ - INFO - Collecting 20 batches for sampling
+2026-02-16 01:28:15,710 - __main__ - INFO - Sample of 2560 size created
+2026-02-16 01:28:15,710 - __main__ - INFO - Sample obtained
+2026-02-16 01:28:15,710 - __main__ - INFO - Dataset Overview
+2026-02-16 01:28:15,710 - __main__ - INFO - 	Rows: 2560
+2026-02-16 01:28:15,710 - __main__ - INFO - 	Columns: 42
+2026-02-16 01:28:15,717 - __main__ - INFO - 	Memory: 4.74 MB
+
+2026-02-16 01:28:15,717 - __main__ - INFO - Data Types
+2026-02-16 01:28:15,718 - __main__ - INFO - Numeric columns: 13
+2026-02-16 01:28:15,718 - __main__ - INFO - Categorical columns: 29
+
+2026-02-16 01:28:15,718 - __main__ - INFO - Missing Values
+2026-02-16 01:28:15,721 - __main__ - INFO - Missing values:
+age                                           0
+class of worker                               0
+detailed industry recode                      0
+detailed occupation recode                    0
+education                                     0
+wage per hour                                 0
+enroll in edu inst last wk                    0
+marital stat                                  0
+major industry code                           0
+major occupation code                         0
+race                                          0
+hispanic origin                               6
+sex                                           0
+member of a labor union                       0
+reason for unemployment                       0
+full or part time employment stat             0
+capital gains                                 0
+capital losses                                0
+dividends from stocks                         0
+tax filer stat                                0
+region of previous residence                  0
+state of previous residence                   0
+detailed household and family stat            0
+detailed household summary in household       0
+weight                                        0
+migration code-change in msa                  0
+migration code-change in reg                  0
+migration code-move within reg                0
+live in this house 1 year ago                 0
+migration prev res in sunbelt                 0
+num persons worked for employer               0
+family members under 18                       0
+country of birth father                       0
+country of birth mother                       0
+country of birth self                         0
+citizenship                                   0
+own business or self employed                 0
+fill inc questionnaire for veteran's admin    0
+veterans benefits                             0
+weeks worked in year                          0
+year                                          0
+label                                         0
+dtype: int64
+2026-02-16 01:28:15,722 - __main__ - INFO - Missing Column Values: 1
+2026-02-16 01:28:15,722 - __main__ - INFO - 	hispanic origin: 6 (0.2%)
+
+2026-02-16 01:28:15,722 - __main__ - INFO - Target Variable Analysis
+2026-02-16 01:28:15,723 - __main__ - INFO - Column name: label
+2026-02-16 01:28:15,723 - __main__ - INFO - Unique values: 2
+2026-02-16 01:28:15,724 - __main__ - INFO - Distribution:
+label
+- 50000.    2426
+50000+.      134
+Name: count, dtype: int64
+
+2026-02-16 01:28:15,724 - __main__ - INFO - Data Statistics
+2026-02-16 01:28:15,724 - __main__ - INFO - Numeric Columns Description
+2026-02-16 01:28:15,730 - __main__ - INFO -                age  detailed industry recode  ...  weeks worked in year         year
+count  2560.000000               2560.000000  ...           2560.000000  2560.000000
+mean     34.660938                 15.826562  ...             24.367969    94.494531
+std      21.539477                 17.973875  ...             24.462214     0.500068
+min       0.000000                  0.000000  ...              0.000000    94.000000
+25%      16.000000                  0.000000  ...              0.000000    94.000000
+50%      34.000000                  4.000000  ...             16.000000    94.000000
+75%      49.000000                 33.000000  ...             52.000000    95.000000
+max      90.000000                 50.000000  ...             52.000000    95.000000
+
+[8 rows x 13 columns]
+2026-02-16 01:28:15,737 - __main__ - INFO - Categorical Columns Description
+2026-02-16 01:28:15,748 - __main__ - INFO -         class of worker  ...     label
+count              2560  ...      2560
+unique                9  ...         2
+top     Not in universe  ...  - 50000.
+freq               1231  ...      2426
+
+[4 rows x 29 columns]
+2026-02-16 01:28:15,758 - __main__ - INFO - Description Ready
+
+2026-02-16 01:28:15,758 - __main__ - INFO - Exploration insights ready. Function returns Dict[str, Any]
+2026-02-16 01:28:16,116 - __main__ - INFO - Target Distribution saved to plots/target_distribution.png
+2026-02-16 01:28:16,226 - __main__ - INFO - Correlation Heatmap saved to plots/correlation_heatmap.png
+2026-02-16 01:28:16,226 - __main__ - INFO - Data visualization complete
